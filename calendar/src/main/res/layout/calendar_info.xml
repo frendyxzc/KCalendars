@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <vip.frendy.tablayout.SlidingTabLayout
+        android:id="@+id/tabs"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        app:tl_indicator_color="@color/colorAccent"
+        app:tl_indicator_width="80dp"
+        app:tl_tab_space_equal="true"
+        app:tl_textSelectColor="@color/colorAccent"
+        app:tl_textUnselectColor="@color/colorPrimaryDark"
+        app:tl_textAllCaps="true"
+        app:tl_textsize="15sp"/>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="40dp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/background_top_bar_divider"/>
+</FrameLayout>

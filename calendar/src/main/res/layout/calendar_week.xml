@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/llWeekCalendar"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <vip.frendy.calendars.week.WeekCalendarView
+        android:id="@+id/wcvCalendar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/week_calendar_height"
+        android:overScrollMode="never"
+        android:background="@android:color/white"
+        android:visibility="visible"
+        app:week_day_text_size="@integer/calendar_text_size_type_2"
+        app:week_holiday_color="@color/holiday_text_color"
+        app:week_normal_text_color="@color/colorPrimaryDark"
+        app:week_weekend_text_color="@color/colorPrimaryDark"
+        app:week_selected_circle_color="@color/colorAccent"
+        app:week_selected_circle_today_color="@color/colorAccent"
+        app:week_today_text_color="@color/colorAccent"
+        app:week_show_holiday_hint="true"
+        app:week_show_lunar="false"
+        app:week_show_task_hint="true"/>
+
+</LinearLayout>
